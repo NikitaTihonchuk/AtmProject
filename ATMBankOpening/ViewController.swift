@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         googleMapsView.isMyLocationEnabled = true
         googleMapsView.delegate = self
         getBankLocation()
+        self.view.backgroundColor = .red
     }
     
     func getBankLocation() {
