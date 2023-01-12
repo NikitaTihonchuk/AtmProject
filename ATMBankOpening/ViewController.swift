@@ -34,7 +34,6 @@ class ViewController: UIViewController {
             }
             self.drawMarkers(coordinates: self.location)
         }, failure: { errorString in
-            print(errorString)
         })
     }
     
