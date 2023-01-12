@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11FD18F82970665C001D9375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FD18F72970665C001D9375 /* AppDelegate.swift */; };
+		11FD18FA2970665C001D9375 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FD18F92970665C001D9375 /* SceneDelegate.swift */; };
+		11FD18FC2970665C001D9375 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FD18FB2970665C001D9375 /* ViewController.swift */; };
+		11FD18FF2970665C001D9375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11FD18FD2970665C001D9375 /* Main.storyboard */; };
+		11FD19012970665E001D9375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FD19002970665E001D9375 /* Assets.xcassets */; };
+		11FD19042970665E001D9375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11FD19022970665E001D9375 /* LaunchScreen.storyboard */; };
+		11FD190C2970685B001D9375 /* BelarusbankAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FD190B2970685B001D9375 /* BelarusbankAPI.swift */; };
+		11FD190E29706BCF001D9375 /* BelarusbankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FD190D29706BCF001D9375 /* BelarusbankModel.swift */; };
+		11FD191029706E2B001D9375 /* BelarusbankProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FD190F29706E2B001D9375 /* BelarusbankProvider.swift */; };
+		E9B5262B0A004AAC9A75E231 /* Pods_ATMBankOpening.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9659856A733F8119A2A7056 /* Pods_ATMBankOpening.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11FD18F42970665C001D9375 /* ATMBankOpening.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATMBankOpening.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11FD18F72970665C001D9375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11FD18F92970665C001D9375 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		11FD18FB2970665C001D9375 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11FD18FE2970665C001D9375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11FD19002970665E001D9375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11FD19032970665E001D9375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11FD19052970665E001D9375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11FD190B2970685B001D9375 /* BelarusbankAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelarusbankAPI.swift; sourceTree = "<group>"; };
+		11FD190D29706BCF001D9375 /* BelarusbankModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelarusbankModel.swift; sourceTree = "<group>"; };
+		11FD190F29706E2B001D9375 /* BelarusbankProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelarusbankProvider.swift; sourceTree = "<group>"; };
+		726B765DBC2C0BE3D9B0F45A /* Pods-ATMBankOpening.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMBankOpening.debug.xcconfig"; path = "Target Support Files/Pods-ATMBankOpening/Pods-ATMBankOpening.debug.xcconfig"; sourceTree = "<group>"; };
+		A9659856A733F8119A2A7056 /* Pods_ATMBankOpening.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATMBankOpening.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C42542719DDE477CA5231B37 /* Pods-ATMBankOpening.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATMBankOpening.release.xcconfig"; path = "Target Support Files/Pods-ATMBankOpening/Pods-ATMBankOpening.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11FD18F12970665C001D9375 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B5262B0A004AAC9A75E231 /* Pods_ATMBankOpening.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06D04D2A1B52B842710BD1A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9659856A733F8119A2A7056 /* Pods_ATMBankOpening.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11FD18EB2970665C001D9375 = {
+			isa = PBXGroup;
+			children = (
+				11FD18F62970665C001D9375 /* ATMBankOpening */,
+				11FD18F52970665C001D9375 /* Products */,
+				B8A05832B768806D04AC649E /* Pods */,
+				06D04D2A1B52B842710BD1A9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		11FD18F52970665C001D9375 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11FD18F42970665C001D9375 /* ATMBankOpening.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11FD18F62970665C001D9375 /* ATMBankOpening */ = {
+			isa = PBXGroup;
+			children = (
+				11FD190B2970685B001D9375 /* BelarusbankAPI.swift */,
+				11FD190D29706BCF001D9375 /* BelarusbankModel.swift */,
+				11FD190F29706E2B001D9375 /* BelarusbankProvider.swift */,
+				11FD18F72970665C001D9375 /* AppDelegate.swift */,
+				11FD18F92970665C001D9375 /* SceneDelegate.swift */,
+				11FD18FB2970665C001D9375 /* ViewController.swift */,
+				11FD18FD2970665C001D9375 /* Main.storyboard */,
+				11FD19002970665E001D9375 /* Assets.xcassets */,
+				11FD19022970665E001D9375 /* LaunchScreen.storyboard */,
+				11FD19052970665E001D9375 /* Info.plist */,
+			);
+			path = ATMBankOpening;
+			sourceTree = "<group>";
+		};
+		B8A05832B768806D04AC649E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				726B765DBC2C0BE3D9B0F45A /* Pods-ATMBankOpening.debug.xcconfig */,
+				C42542719DDE477CA5231B37 /* Pods-ATMBankOpening.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11FD18F32970665C001D9375 /* ATMBankOpening */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11FD19082970665E001D9375 /* Build configuration list for PBXNativeTarget "ATMBankOpening" */;
+			buildPhases = (
+				12EFD72FD09BDD9A6FB0DCCE /* [CP] Check Pods Manifest.lock */,
+				11FD18F02970665C001D9375 /* Sources */,
+				11FD18F12970665C001D9375 /* Frameworks */,
+				11FD18F22970665C001D9375 /* Resources */,
+				C5F40377658BB64A962259DA /* [CP] Embed Pods Frameworks */,
+				4E8C17BE2B4AC2EBBCF3DF80 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ATMBankOpening;
+			productName = ATMBankOpening;
+			productReference = 11FD18F42970665C001D9375 /* ATMBankOpening.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11FD18EC2970665C001D9375 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					11FD18F32970665C001D9375 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 11FD18EF2970665C001D9375 /* Build configuration list for PBXProject "ATMBankOpening" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11FD18EB2970665C001D9375;
+			productRefGroup = 11FD18F52970665C001D9375 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11FD18F32970665C001D9375 /* ATMBankOpening */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11FD18F22970665C001D9375 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11FD19042970665E001D9375 /* LaunchScreen.storyboard in Resources */,
+				11FD19012970665E001D9375 /* Assets.xcassets in Resources */,
+				11FD18FF2970665C001D9375 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12EFD72FD09BDD9A6FB0DCCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ATMBankOpening-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E8C17BE2B4AC2EBBCF3DF80 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ATMBankOpening/Pods-ATMBankOpening-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ATMBankOpening/Pods-ATMBankOpening-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ATMBankOpening/Pods-ATMBankOpening-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5F40377658BB64A962259DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ATMBankOpening/Pods-ATMBankOpening-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ATMBankOpening/Pods-ATMBankOpening-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ATMBankOpening/Pods-ATMBankOpening-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11FD18F02970665C001D9375 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11FD18FC2970665C001D9375 /* ViewController.swift in Sources */,
+				11FD190E29706BCF001D9375 /* BelarusbankModel.swift in Sources */,
+				11FD18F82970665C001D9375 /* AppDelegate.swift in Sources */,
+				11FD18FA2970665C001D9375 /* SceneDelegate.swift in Sources */,
+				11FD190C2970685B001D9375 /* BelarusbankAPI.swift in Sources */,
+				11FD191029706E2B001D9375 /* BelarusbankProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		11FD18FD2970665C001D9375 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11FD18FE2970665C001D9375 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11FD19022970665E001D9375 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11FD19032970665E001D9375 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11FD19062970665E001D9375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11FD19072970665E001D9375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11FD19092970665E001D9375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 726B765DBC2C0BE3D9B0F45A /* Pods-ATMBankOpening.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PZCB5RRY2G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ATMBankOpening/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nikita.ATMBankOpening;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11FD190A2970665E001D9375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42542719DDE477CA5231B37 /* Pods-ATMBankOpening.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PZCB5RRY2G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ATMBankOpening/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nikita.ATMBankOpening;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11FD18EF2970665C001D9375 /* Build configuration list for PBXProject "ATMBankOpening" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11FD19062970665E001D9375 /* Debug */,
+				11FD19072970665E001D9375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11FD19082970665E001D9375 /* Build configuration list for PBXNativeTarget "ATMBankOpening" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11FD19092970665E001D9375 /* Debug */,
+				11FD190A2970665E001D9375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11FD18EC2970665C001D9375 /* Project object */;
+}
