@@ -30,22 +30,21 @@ final class ViewController: UIViewController {
             print(error)
         }
     }
-    
-    private func drawMarkers(bank: Location) {
-        guard let bankXcoordinate = Double(bank.gps_x),
-              let bankYcoordinate = Double(bank.gps_y) else { return }
-        let position = CLLocationCoordinate2D(latitude: bankXcoordinate, longitude: bankYcoordinate)
-        let marker = GMSMarker(position: position)
-        getAdditionalInfo(marker: marker, title: bank.address, snippet: bank.work_time)
-        marker.map = googleMapsView
-    }
-    
-    func getAdditionalInfo(marker: GMSMarker, title: String, snippet: String) {
-        marker.title = title
-        marker.snippet = snippet
-        googleMapsView.selectedMarker = marker
-    }
-    
-    
+        
+        private func drawMarkers(bank: Location) {
+            guard let bankXcoordinate = Double(bank.gps_x),
+                  let bankYcoordinate = Double(bank.gps_y) else { return }
+            let position = CLLocationCoordinate2D(latitude: bankXcoordinate, longitude: bankYcoordinate)
+            let marker = GMSMarker(position: position)
+            getAdditionalInfo(marker: marker, title: bank.address, snippet: bank.work_time)
+            marker.map = googleMapsView
+        }
+        
+        private func getAdditionalInfo(marker: GMSMarker, title: String, snippet: String) {
+            marker.title = title
+            marker.snippet = snippet
+            googleMapsView.selectedMarker = marker
+        }
+        
     
 }
