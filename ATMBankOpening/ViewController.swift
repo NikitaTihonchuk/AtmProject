@@ -9,52 +9,43 @@ import UIKit
 import GoogleMaps
 import CoreLocation
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
     @IBOutlet weak var googleMapsView: GMSMapView!
-    
-    var location = [CLLocation]()
-    var data = [Location]()
-    var markers = [GMSMarker()]
-    
+    private var location = [CLLocation]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         googleMapsView.isMyLocationEnabled = true
-        googleMapsView.delegate = self
-        getBankLocation()
-        self.view.backgroundColor = .red
+        getBank()
     }
     
-    func getBankLocation() {
-        BelarusbankProvider().getCurrency(success: { [weak self] result in
+    private func getBank() {
+        BelarusbankProvider().getCurrency { [weak self] allBank in
             guard let self else { return }
-            for terminal in result {
-                let locat = CLLocation(latitude: Double(terminal.gps_x)!, longitude: Double(terminal.gps_y)!)
-            self.location.append(locat)
+            for bank in allBank {
+                self.drawMarkers(bank: bank)
             }
-            self.drawMarkers(coordinates: self.location)
-        }, failure: { errorString in
-            print(errorString)
-        })
-    }
-    
-    func drawMarkers(coordinates: [CLLocation]) {
-        for coordinate in coordinates {
-           let marker = GMSMarker(position: coordinate.coordinate)
-            marker.map = googleMapsView
-            self.markers.append(marker)
+        } failure: { error in
+            print(error)
         }
     }
-}
-
-extension ViewController: GMSMapViewDelegate {
     
-    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
-        if self.markers.contains(marker) {
-            
-        }
-        return true
+    private func drawMarkers(bank: Location) {
+        guard let bankXcoordinate = Double(bank.gps_x),
+              let bankYcoordinate = Double(bank.gps_y) else { return }
+        let position = CLLocationCoordinate2D(latitude: bankXcoordinate, longitude: bankYcoordinate)
+        let marker = GMSMarker(position: position)
+        getAdditionalInfo(marker: marker, title: bank.address, snippet: bank.work_time)
+        marker.map = googleMapsView
     }
+    
+    func getAdditionalInfo(marker: GMSMarker, title: String, snippet: String) {
+        marker.title = title
+        marker.snippet = snippet
+        googleMapsView.selectedMarker = marker
+    }
+    
+    
+    
 }
-
