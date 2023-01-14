@@ -43,6 +43,9 @@ final class ViewController: UIViewController {
     private func getAdditionalInfo(marker: GMSMarker, title: String, snippet: String) {
         marker.title = title
         marker.snippet = snippet
+        if snippet == "Круглосуточно" {
+            marker.icon = GMSMarker.markerImage(with: .systemGreen)
+        }
         googleMapsView.selectedMarker = marker
     }
 
