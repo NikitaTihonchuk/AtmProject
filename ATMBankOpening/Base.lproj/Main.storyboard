@@ -18,15 +18,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" restorationIdentifier="GMSMapView" translatesAutoresizingMaskIntoConstraints="NO" id="xPW-u6-8aB" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="110" width="393" height="708"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Xq-We-7V3">
+                                <rect key="frame" x="16" y="59" width="172.66666666666666" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Есть наличка"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JL6-0Q-wTZ">
+                                <rect key="frame" x="204.66666666666663" y="59" width="172.33333333333337" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Налички нет"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                         <constraints>
-                            <constraint firstItem="xPW-u6-8aB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RVv-N9-0fS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xPW-u6-8aB" secondAttribute="trailing" id="r3A-ym-70j"/>
+                            <constraint firstItem="6Xq-We-7V3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6Ur-H8-7Rm"/>
+                            <constraint firstItem="6Xq-We-7V3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7Bv-1E-hDZ"/>
+                            <constraint firstItem="xPW-u6-8aB" firstAttribute="top" secondItem="JL6-0Q-wTZ" secondAttribute="bottom" constant="16" id="UlB-Hd-hLi"/>
+                            <constraint firstItem="JL6-0Q-wTZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="b9C-p1-EzV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JL6-0Q-wTZ" secondAttribute="trailing" constant="16" id="djK-DL-bup"/>
+                            <constraint firstItem="6Xq-We-7V3" firstAttribute="width" secondItem="JL6-0Q-wTZ" secondAttribute="width" id="frJ-m6-pPB"/>
+                            <constraint firstItem="xPW-u6-8aB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jaH-Js-dzS"/>
+                            <constraint firstItem="JL6-0Q-wTZ" firstAttribute="leading" secondItem="6Xq-We-7V3" secondAttribute="trailing" constant="16" id="tq6-kA-mrx"/>
                             <constraint firstItem="xPW-u6-8aB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vqs-OU-2F3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xPW-u6-8aB" secondAttribute="bottom" id="wu3-Am-UpU"/>
                         </constraints>
@@ -37,10 +53,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48" y="-2"/>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
