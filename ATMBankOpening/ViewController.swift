@@ -45,5 +45,5 @@ final class ViewController: UIViewController {
         marker.snippet = snippet
         googleMapsView.selectedMarker = marker
     }
-        
+
 }
