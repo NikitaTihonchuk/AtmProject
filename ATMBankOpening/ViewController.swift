@@ -12,8 +12,7 @@ import CoreLocation
 final class ViewController: UIViewController {
     
     @IBOutlet weak var googleMapsView: GMSMapView!
-    private var location = [CLLocation]()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         googleMapsView.isMyLocationEnabled = true
