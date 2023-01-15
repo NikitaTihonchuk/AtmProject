@@ -24,12 +24,18 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Xq-We-7V3">
                                 <rect key="frame" x="16" y="59" width="172.66666666666666" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Есть наличка"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Есть USD"/>
+                                <connections>
+                                    <action selector="searchATMIncludesMoneyDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MG8-4O-APP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JL6-0Q-wTZ">
                                 <rect key="frame" x="204.66666666666663" y="59" width="172.33333333333337" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Налички нет"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Все банки"/>
+                                <connections>
+                                    <action selector="searchATMWithNoMoney:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fpw-R4-AsG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -48,6 +54,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="filterButtonHaveMoney" destination="6Xq-We-7V3" id="Cvv-aM-N7u"/>
+                        <outlet property="filterButtonHaveNotMoney" destination="JL6-0Q-wTZ" id="ELF-cU-nCF"/>
                         <outlet property="googleMapsView" destination="xPW-u6-8aB" id="WEh-y7-au7"/>
                     </connections>
                 </viewController>

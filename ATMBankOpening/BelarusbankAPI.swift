@@ -48,6 +48,7 @@ extension BelarusbankAPI: TargetType {
         switch self {
             case .getAllBank:
                 parameters["city"] = "Минск"
+                parameters["ATM_currency"] = "BYN,USD,EUR"
         }
         
         return parameters
